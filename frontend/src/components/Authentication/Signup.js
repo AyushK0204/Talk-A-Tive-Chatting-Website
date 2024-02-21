@@ -5,7 +5,7 @@ import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
@@ -60,7 +60,6 @@ const Signup = () => {
         },
         config
       );
-      console.log(data);
       toast({
         title: "Registration Successful",
         status: "success",
